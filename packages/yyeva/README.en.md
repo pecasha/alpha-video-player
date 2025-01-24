@@ -17,7 +17,7 @@ pnpm add yyeva
 ```
 ## 💿 Usage
 ```typescript
-import {yyEva,YYEvaType} from 'yyeva'
+import {yyEva,YYEvaType} from '@pecasha/alpha-video-player'
 let player:YYEvaType = await yyEva({
 	container,// Html Element
 	videoUrl,// Video Url

@@ -1,6 +1,6 @@
 {
-  "name": "yyeva",
-  "version": "1.1.2",
+  "name": "@pecasha/alpha-video-player",
+  "version": "1.0.0",
   "description": "mp4 gift player",
   "files": ["dist"],
   "maintainers": [
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yylive/YYEVA-Web.git",
+    "url": "git+https://github.com/pecasha/alpha-video-player.git",
     "directory": "packages/yyeva"
   },
   "main": "dist/index.js",
@@ -38,6 +38,9 @@
         "default": "./dist/index.js"
       }
     }
+  },
+  "publishConfig": {
+    "@pecasha:registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "dev": "tsup --watch",

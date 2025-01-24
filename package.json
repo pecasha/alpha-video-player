@@ -1,8 +1,8 @@
 {
-  "name": "yyeva-workspace",
+  "name": "alpha-video-player-workspace",
   "scripts": {
-    "dev": "pnpm --parallel --filter=yyeva --filter=offical dev",
-    "build": "pnpm --parallel --filter=yyeva --filter=offical build",
+    "dev": "pnpm --parallel --filter=@pecasha/alpha-video-player --filter=offical dev",
+    "build": "pnpm --parallel --filter=@pecasha/alpha-video-player --filter=offical build",
     "start": "pnpm --filter=offical start",
     "lint": "biome check . --fix"
   },

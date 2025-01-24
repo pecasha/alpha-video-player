@@ -18,7 +18,7 @@ pnpm add yyeva
 ```
 ## 💿使用
 ```typescript
-import {yyEva,YYEvaType} from 'yyeva'
+import {yyEva,YYEvaType} from '@pecasha/alpha-video-player'
 let player:YYEvaType = await yyEva({
 	container,// Html Element
 	videoUrl,// Video Url
@@ -102,7 +102,7 @@ yyeva({
 ```
 或者引用 yyeva 的兼容方法 实现 [demo](https://github.com/yylive/YYEVA-Web/blob/main/projects/es5-demo/src/App.tsx#L3) 如： 
 ```js
-import {wechatPolyfill} from 'yyeva'
+import {wechatPolyfill} from '@pecasha/alpha-video-player'
 wechatPolyfill.initVideoIDPosition(['yyeva_right_top_position', 'yyeva_full_screen_position'])
 ```
 

@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "yyeva": "workspace:^"
+    "@pecasha/alpha-video-player": "workspace:^"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.3.2",
