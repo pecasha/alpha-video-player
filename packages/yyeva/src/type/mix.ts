@@ -126,6 +126,8 @@ export type MixEvideoOptions = VideoEvent & {
    * @default left
    */
   alphaDirection?: AlphaDirection
+  alphaPosition?: [number, number, number, number];
+  rgbPosition?: [number, number, number, number];
   /**
    * 渲染模式
    * @default webgl

@@ -69,8 +69,14 @@ export class BizBase {
       const vW = this.video.videoWidth ? this.video.videoWidth : 1800
       const vH = this.video.videoHeight ? this.video.videoHeight : 1000
       const stageW = vW / 2
-      const [rgbX, rgbY, rgbW, rgbH] = this.op.alphaDirection === 'right' ? [0, 0, stageW, vH] : [stageW, 0, stageW, vH]
-      const [aX, aY, aW, aH] = this.op.alphaDirection === 'right' ? [stageW, 0, stageW, vH] : [0, 0, stageW, vH]
+      let rgbX: number, rgbY: number, rgbW: number, rgbH: number, aX: number, aY: number, aW: number, aH: number;
+      if(this.op.alphaPosition && this.op.rgbPosition) {
+        [rgbX, rgbY, rgbW, rgbH] = this.op.rgbPosition;
+        [aX, aY, aW, aH] = this.op.alphaPosition;
+      } else {
+        [rgbX, rgbY, rgbW, rgbH] = this.op.alphaDirection === 'right' ? [0, 0, stageW, vH] : [stageW, 0, stageW, vH];
+        [aX, aY, aW, aH] = this.op.alphaDirection === 'right' ? [stageW, 0, stageW, vH] : [0, 0, stageW, vH];
+      }
       return {rgbX, rgbY, rgbW, rgbH, vW, vH, aX, aY, aW, aH}
     }
   }
