@@ -89,3 +89,4 @@ export {yyEva, wechatPolyfill}
 export type YYEvaType = Player
 export type YYEvaOptionsType = MixEvideoOptions
 export default yyEva
+export * from "./type/mix";
